@@ -41,7 +41,19 @@
    		<maven.compiler.source>6</maven.compiler.source>
    		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
- 
+	<distributionManagement>
+		<repository>
+		    <id>nexus</id>
+		    <name>My-App</name>
+		    <url>http://35.154.224.128:8081/repository/My-app/</url>
+	         </repository>
+		<snapshotRepository>
+		     <id>nexus</id>
+		    <name>My-App</name>
+		    <url>http://35.154.224.128:8081/repository/My-app-snapshot/</url>
+	        </snapshotRepository>
+			
+   </distributionManagement>		
 	
 	
 </project>
